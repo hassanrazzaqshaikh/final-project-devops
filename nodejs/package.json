@@ -1,0 +1,16 @@
+{
+  "name": "node_express_app",
+  "version": "1.0.0",
+  "description": "Node.js Express Application",
+  "author": "Hassan R. Shaikh <hassan.shaikh@yahoo.com>",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "request": "2.88.0"
+  }
+}

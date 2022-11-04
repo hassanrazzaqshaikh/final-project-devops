@@ -1,0 +1,30 @@
+version: '3.3'
+services:
+  nodejs:
+    build:
+      context: ./nodejs
+      dockerfile: Dockerfile
+    networks:
+    - application
+    ports:
+    - 8080:8080
+    environment:
+      DB_HOST: mysql
+    depends_on:
+    - mysql
+  mysql:
+    image: mysql
+    volumes: 
+      - db_data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    #restart: always
+    networks:
+      - application
+    environment:
+      MYSQL_ROOT_PASSWORD: P@ssw0rd
+
+networks:
+  application:
+volumes:
+  db_data:
