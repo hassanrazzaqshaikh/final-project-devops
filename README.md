@@ -13,4 +13,4 @@ CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'P@ssw0rd';
 ALTER USER 'myuser'@'%' IDENTIFIED WITH mysql_native_password BY 'P@ssw0rd';
 
 GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'localhost' IDENTIFIED BY 'P@ssw0rd';
-GRANT ALL PRIVILEGES ON * . * TO 'myuser'@'localhost';
+GRANT ALL PRIVILEGES ON * . * TO 'myuser'@'localhost';# final-project-devops
